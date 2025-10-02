@@ -1,5 +1,4 @@
 import pandas as pd 
-import numpy as np
 
 def extract (filepath, filename):
     file = filepath+'/'+filename
@@ -93,8 +92,8 @@ def data_demographics(df):
     # print('val count' + df.value_counts())
     
 folder_source = 'source'
-filename = 'data_requirements.csv'
-df = extract(folder_source, filename)
+filename_recruitment = 'data_requirements.csv'
+df = extract(folder_source, filename_recruitment)
 
 print('----------------------before transform----------------------')
 data_demographics(df)
